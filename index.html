@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReTro</title>
+
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/864c94abeb.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="max-w-[1170px] mx-auto p-3">
+    <!-- header section -->
+    <header>
+
+        <!-- navbar -->
+        <nav>
+            <div class="navbar bg-base-100 ">
+                <div class="navbar ">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[12] p-2 shadow bg-base-100 rounded-box w-52 font-semibold">
+                            <li><a>Home</a></li>
+                            <li><a>Pencil</a></li>
+                            <li><a>User</a></li>
+                            <li><a>Flag</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">ReTro</a>
+                </div>
+                <div class="navbar-end hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1">
+                        <div class="">
+                            <div class="flex  items-center">
+                                <li><a>
+                                        <div class="tooltip" data-tip="Home">
+                                            <button class="btn"><i class="fa-solid fa-house"></i></button>
+                                        </div>
+                                    </a></li>
+                                <li><a>
+                                        <div class="tooltip" data-tip="Pencil">
+                                            <button class="btn"><i class="fa-solid fa-pencil"></i></button>
+                                        </div>
+                                    </a></li>
+                                <li><a>
+                                        <div class="tooltip" data-tip="User">
+                                            <button class="btn"><i class="fa-solid fa-user-plus"></i></button>
+                                        </div>
+                                    </a></li>
+                                <li><a>
+                                        <div class="tooltip" data-tip="Flag">
+                                            <button class="btn"><i class="fa-regular fa-flag"></i></button>
+                                        </div>
+                                    </a></li>
+                                <div>
+                                    <a class="btn btn-primary rounded-full text-lg">Button</a>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner -->
+        <div class="card  bg-[#12132D] image-full lg:mt-12 mb-24">
+            <figure><img class="w-full mt-20" src="images/bgbanner.png" alt="Shoes" />
+            </figure>
+            <div class="card-body ">
+                <div class="grid lg:grid-cols-2  lg:gap-x-40 gap-y-10 justify-around items-center pt-10">
+                    <div class="">
+                        <h2 class="text-4xl lg:text-6xl font-extrabold">Welcome to the <br>
+                            <span class="text-[#797DFC]">ReTro</span> Forum
+                        </h2>
+                        <p class="py-8">Share your favorite opinion and win and wp <br>
+                            forum coffee mug</p>
+                        <div class="  rounded-2xl ">
+                            <input type="text" placeholder="Type here" class="input border-0  text-black " />
+                            <button
+                                class="btn btn-active bg-[#797DFC] border-none rounded-3xl px-10 text-white ">Search</button>
+                        </div>
+                    </div>
+                    <div class="bg-white text-black h-64 p-10 rounded-2xl">
+                        <div class="font-semibold text-2xl text-[#12132DCC] space-y-6">
+                            <div class="flex justify-between">
+                                <h3>Registered Users </h3>
+                                <h3>01
+                            </div>
+                            <div class="flex justify-between">
+                                <h3>Forum </h3>
+                                <h3>05
+                            </div>
+                            <div class="flex justify-between">
+                                <h3>Topics</h3>
+                                <h3>01
+                            </div>
+                            <div class="flex justify-between">
+                                <h3>Replies </h3>
+                                <h3>01
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- main section -->
+    <main>
+        <!-- Discuss section -->
+        <section>
+            <div class="text-center">
+                <h2 class="font-extrabold text-4xl text-[#12132D] pb-6">Let’s Discuss</h2>
+                <p class="text-[#12132D99] pb-12">Yes, you can run unit tests and view the results directly within the
+                    app.
+                    The <br>
+                    integrated testing features allow for a streamlined </p>
+            </div>
+        </section>
+
+        <!-- card section-->
+        <section>
+            <div id="all-container">
+                
+                    <!-- title -->
+                    <div class=" flex justify-between bg-[#FFFFFF]">
+                        <h2 class="text-[#12132D] text-xl font-bold">Title</h2>
+                        <h2> <span class="text-green-500"><i class="fa-solid fa-check-double"></i></span> Mark as read (
+                            <span id="seatCount">0</span> )
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- join section -->
+        <section>
+            <div class="card  bg-[#12132D] image-full lg:mt-12 mb-24">
+                <figure><img class="w-full mt-20" src="images/bgbanner.png" alt="Shoes" />
+                </figure>
+                <div class="card-body ">
+                    <div class="grid lg:grid-cols-2  lg:gap-x-40 gap-y-10 justify-around items-center pt-10">
+                        <div class="">
+                            <h2 class="text-4xl lg:text-6xl font-extrabold">Join Our Forum
+                            </h2>
+                            <p class="py-8">Share your favorite opinion and win and wp forum coffee mug! Yes, you can
+                                run unit tests and view the results directly within the app. </p>
+
+                            <button
+                                class="btn btn-active bg-[#797DFC] border-none rounded-3xl px-10 text-white ">Registered
+                                Now</button>
+
+                        </div>
+                        <!-- images -->
+                        <div>
+                            <img src="images/joinforum.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Posts section -->
+        <section>
+            <div class="text-center">
+                <h2 class="font-extrabold text-4xl text-[#12132D] pb-6">Latest Posts</h2>
+                <p class="text-[#12132D99] pb-12">Yes, you can run unit tests and view the results directly within the
+                    app. The <br>
+                    integrated testing features allow for a streamlined .
+            </div>
+        </section>
+
+        <!-- lates post card -->
+        <section>
+            <div id="lates-post-container">
+
+                <div class="grid lg:grid-cols-3 gap-x-10">
+                    
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <section class="text-center pt-32">
+            <div class="flex justify-center">
+                <img  src="images/logo.png" alt="">
+            </div>
+            <p class="py-5 text-[#12132DB3]">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a <br>
+                piece of classical Latin literature from 45 BC</p>
+            <div class="flex gap-x-5 justify-center text-3xl">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <p class="py-20 text-[#12132DB3]">2017, All Rights Reserved.</p>
+        </section>
+    </footer>
+
+    <!--  script-->
+    <script src="script.js/js.js"></script>
+</body>
+
+</html>
